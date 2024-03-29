@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.main-content button, .twitter-link button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.rolling-potato {
+    position: absolute;
+    animation: roll 10s infinite linear;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes roll {
+    from {transform: translateX(0px);}
+    to {transform: translateX(100%);}
+}
+
+.twitter-link {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
